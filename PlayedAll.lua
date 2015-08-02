@@ -1,6 +1,6 @@
 PlayedAll = {}
 PlayedAll.name = "PlayedAll"
-PlayedAll.version = "0.1"
+PlayedAll.version = "0.2"
 
 local savedVariables
 local charName = GetUnitName("player")
@@ -80,6 +80,8 @@ local function initialize()
     end
 
     setupHooks()
+
+    EVENT_MANAGER:UnregisterForEvent(PlayedAll.name, EVENT_ADD_ON_LOADED)
 end
 
 local function onAddOnLoaded(_, addonName)
