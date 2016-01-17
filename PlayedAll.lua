@@ -1,6 +1,6 @@
 PlayedAll = {}
 PlayedAll.name = "PlayedAll"
-PlayedAll.version = "0.2"
+PlayedAll.version = "1.0"
 
 local savedVariables
 local charName = GetUnitName("player")
