@@ -1,7 +1,8 @@
 ## Title: PlayedAll
 ## Description: Adds a parameter to the /played command to display the played time of all your characters.
-## APIVersion: 100011
+## APIVersion: 100013
 ## SavedVariables: PlayedAllVars
+## FastAPI : 100013
 
 lang/en.lua
 lang/$(language).lua
