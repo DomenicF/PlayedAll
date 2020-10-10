@@ -1,6 +1,6 @@
 PlayedAll = {}
 PlayedAll.name = "PlayedAll"
-PlayedAll.version = "1.0"
+PlayedAll.version = "1.1"
 
 local savedVariables
 local charName = GetUnitName("player")
@@ -62,9 +62,11 @@ local function initialize()
     updatePlayedTime()
 
     SLASH_COMMANDS[playedCommand] = function (args)
+        formattedArgs = string.lower(args)
+
         updatePlayedTime()
-        if args ~= 'all' then
-            normalPlayed(args)
+        if formattedArgs ~= 'all' then
+            normalPlayed(formattedArgs)
             return
         end
 
